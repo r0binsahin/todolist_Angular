@@ -40,7 +40,7 @@ export class DisplayTodosComponent implements OnInit {
 
   editTask() {
     this.task.task_name = this.editTaskValue;
-    this.crudService.editTask(this.task).subscribe((res) => {
+    this.crudService.editTask(this.task).subscribe(() => {
       this.getAllTasks();
       sortTasks(this.tasks);
     });
