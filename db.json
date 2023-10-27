@@ -2,12 +2,7 @@
   "tasks": [
     {
       "id": 973,
-      "task_name": "edited",
-      "isDone": false
-    },
-    {
-      "id": 789,
-      "task_name": "ggggg",
+      "task_name": "edited edit",
       "isDone": false
     },
     {
@@ -23,6 +18,11 @@
     {
       "id": 145,
       "task_name": "hej",
+      "isDone": false
+    },
+    {
+      "id": 590,
+      "task_name": "add new",
       "isDone": false
     }
   ]

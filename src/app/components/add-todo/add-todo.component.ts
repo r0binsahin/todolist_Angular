@@ -43,6 +43,8 @@ export class AddTodoComponent {
 
         this.configureTodo();
         this.cdr.detectChanges();
+
+        this.crudService.getAllTasks().pipe().subscribe();
       });
   }
 }
