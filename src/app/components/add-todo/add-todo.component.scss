@@ -1,0 +1,36 @@
+.todoContainer {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 30px;
+
+  &__todo {
+    .task,
+    .taskToEdit {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid black;
+      border-radius: 15px;
+      padding: 0px 5px 0px 5px;
+      margin: 3px;
+
+      &__actions {
+        margin: 5px;
+        &--edit,
+        &--delete {
+          margin: 0 5px;
+        }
+      }
+
+      &__text {
+        margin: 5px 5px;
+      }
+
+      &__text.done {
+        text-decoration: line-through;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+<div class="todoContainer">
+  <div *ngFor="let task of tasks; let i = index" class="todoContainer__todo">
+    <div class="task">
+      <p [class.task__text]="true" [class.done]="task.isDone">
+        {{ task.task_name }}
+      </p>
+
+      <div class="task__actions">
+        <button class="task__actions--delete" (click)="deleteTask(task)">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+        <button class="task__actions--edit" (click)="call(task, i)">
+          <i class="fa-regular fa-pen-to-square"></i>
+        </button>
+        <button class="task__actions--done" (click)="setIsDone(task, i)">
+          <i class="fa-solid fa-check"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="taskToEdit" *ngIf="editMode && i === editingTaskIndex">
+      <form>
+        <input
+          type="text"
+          class="editInput"
+          name="editedTask"
+          [(ngModel)]="editTaskValue"
+        />
+        <button class="update" (click)="editTask()">update</button>
+      </form>
+    </div>
+  </div>
+</div>
