@@ -1,6 +1,6 @@
 <div class="todoContainer">
   <div *ngFor="let task of tasks; let i = index" class="todoContainer__todo">
-    <div class="task">
+    <div class="task" *ngIf="!editMode || i !== editingTaskIndex">
       <p [class.task__text]="true" [class.done]="task.isDone">
         {{ task.task_name }}
       </p>

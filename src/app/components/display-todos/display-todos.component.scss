@@ -5,8 +5,7 @@
   margin: 30px;
 
   &__todo {
-    .task,
-    .taskToEdit {
+    .task {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -31,6 +30,26 @@
       &__text.done {
         text-decoration: line-through;
       }
+    }
+  }
+
+  .taskToEdit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 0px 5px 0px 5px;
+    margin: 3px;
+
+    form {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      padding: 0px 5px 0px 5px;
+      margin: 3px;
     }
   }
 }
