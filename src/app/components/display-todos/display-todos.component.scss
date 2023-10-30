@@ -17,9 +17,17 @@
 
       &__actions {
         margin: 5px;
+
         &--edit,
-        &--delete {
+        &--delete,
+        &--done {
           margin: 0 5px;
+          border: none;
+          background: white;
+
+          :hover {
+            color: green;
+          }
         }
       }
 
@@ -50,6 +58,13 @@
       justify-content: space-between;
       padding: 0px 5px 0px 5px;
       margin: 3px;
+
+      .editInput {
+        border: 1px solid rgb(151, 145, 145);
+        border-radius: 15px;
+        padding: 0px 5px 0px 5px;
+        margin: 3px;
+      }
     }
   }
 }
